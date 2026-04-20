@@ -1,0 +1,91 @@
+# music_normalizer config. Copy to config.yaml and edit.
+
+# Absolute or relative path to the staging music folder to scan.
+staging_root: "/mnt/music/staging"
+
+# Where to write per-album job artifacts (manifest.json, suggestions.json, etc.).
+jobs_dir: "./jobs"
+
+# Audio extensions considered in scans (case-insensitive).
+supported_extensions:
+  - ".flac"
+  - ".mp3"
+  - ".m4a"
+  - ".ogg"
+  - ".opus"
+  - ".wav"
+
+# Safety: default to dry-run for the apply command. Must pass --no-dry-run to actually write.
+dry_run_default: true
+
+# Whether to treat "Original Mix" as a removable redundant suffix.
+remove_original_mix: true
+
+# Whether to strip trailing BPM markers like "(145 BPM)" or " - 160bpm".
+remove_bpm_suffix: true
+
+# Junk prefixes to strip from titles (case-insensitive, matched at start after number-strip).
+junk_prefixes:
+  - "va -"
+  - "various artists -"
+  - "v.a. -"
+  - "www."
+  - "[free]"
+  - "[free download]"
+  - "[fd]"
+
+# Junk suffixes to strip from titles (case-insensitive, matched at end).
+junk_suffixes:
+  - "(original mix)"
+  - "[original mix]"
+  - "- original mix"
+  - "(free download)"
+  - "[free download]"
+  - "(free dl)"
+  - "[fd]"
+  - "(www.release.com)"
+
+# Scene / rip markers that flag a title as junk.
+scene_markers:
+  - "webrip"
+  - "cdrip"
+  - "vinyl rip"
+  - "promo"
+  - "-cmc"
+  - "-just"
+
+# Separator normalization. Sequences in `collapse` collapse to a single space; items in
+# `replace_with_dash` become " - " (with surrounding whitespace).
+separator_rules:
+  collapse: ["_", "   ", "  "]
+  replace_with_dash: [" -- ", " – ", " — "]
+
+# Confidence thresholds used by validator / review.
+# Suggestions below `min_auto_approve` always go to manual review even if --auto-apply.
+confidence:
+  min_auto_approve: 0.9
+  low_confidence_flag: 0.6
+
+# Cache behavior: if true, albums whose fingerprint matches a previous job are skipped.
+cache:
+  skip_unchanged_albums: true
+
+# Ollama configuration.
+ollama:
+  base_url: "http://localhost:11434"
+  model: "llama3.1:8b-instruct"
+  # Hard timeout per request in seconds.
+  request_timeout_s: 120
+  # Temperature: keep low for deterministic structured output.
+  temperature: 0.1
+  # How many tracks to send in one album-level batch before splitting.
+  max_tracks_per_call: 40
+
+# Probe configuration (cheap album sampling before any LLM call).
+probe:
+  # Sample positions used by the probe, in track order: first, second, middle, last.
+  sample_positions: ["first", "second", "middle", "last"]
+  # If probe_score >= this, skip the LLM for the whole album.
+  clean_threshold: 0.9
+  # If probe_score >= this, trust deterministic rules for the whole album.
+  deterministic_threshold: 0.6

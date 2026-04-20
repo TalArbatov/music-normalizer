@@ -1,0 +1,260 @@
+{
+  "album_id": "651d28cdb2a9",
+  "classification": "broken",
+  "probe_score": 0.6,
+  "suggestions": [
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/1. 2LAVE RAC3 - Bloodbath.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/10. 2LAVE RAC3 - Talkin Revolution.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/2. 2LAVE RAC3 - The Magi (We Have The Power).flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/3. 2LAVE RAC3 - We Are The Shamans.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/4. 2LAVE RAC3 - New Generation (Rock The Earth!).flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/5. 2LAVE RAC3 - Climax Vibrations.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/6. 2LAVE RAC3 - Acid Reality.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/7. 2LAVE RAC3 - Everythings Possible, Nothing Is True.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/8. 2LAVE RAC3 - Tribes Of Tomorrow (Fuck Society!).flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/2LAVE RAC3 - Occult Acid Techno Trance - Splatterkore Reckords - 2017/9. 2LAVE RAC3 - Extraterrestrial.flac",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": null,
+      "proposed_artist": null,
+      "action": "unreadable_needs_manual_review",
+      "issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "confidence": 0.3,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    }
+  ],
+  "classification_reason": "majority of tracks have unreadable/generic titles after deterministic pass",
+  "used_llm": false,
+  "created_at": "2026-04-20T13:37:45.706386"
+}

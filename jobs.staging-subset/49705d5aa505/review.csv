@@ -1,0 +1,2 @@
+track_path,action,confidence,current_title,proposed_title,current_artist,proposed_artist,issue_flags,reason
+/home/pio/staging-subset/A-Pyk - Assymetric Smile - Knobs And Keys Music - 2021/A-Pyk - Assymetric Smile.flac,propose_fix,0.90,A-Pyk - Assymetric Smile,Assymetric Smile,A-Pyk,A-Pyk,,stripped artist prefix 'A-Pyk'

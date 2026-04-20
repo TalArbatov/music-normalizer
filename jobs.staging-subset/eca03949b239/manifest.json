@@ -1,0 +1,41 @@
+{
+  "album_id": "eca03949b239",
+  "root": "/home/pio/staging-subset/Ablepsy - Dimension Of Sounds - Another Dimension Music - 2021",
+  "album_name": "Dimension Of Sounds",
+  "album_artist": "Ablepsy",
+  "tracks": [
+    {
+      "path": "/home/pio/staging-subset/Ablepsy - Dimension Of Sounds - Another Dimension Music - 2021/01.Ablepsy - Dimension Of Sounds.flac",
+      "filename": "01.Ablepsy - Dimension Of Sounds.flac",
+      "ext": ".flac",
+      "track_number": 1,
+      "disc_number": 1,
+      "title": "Dimension Of Sounds",
+      "artist": "Ablepsy",
+      "album": "Dimension Of Sounds",
+      "album_artist": "Ablepsy",
+      "year": 2021,
+      "duration_s": 429.47369614512473,
+      "raw_tags": {
+        "artist": "Ablepsy",
+        "discnumber": "1",
+        "date": "2021",
+        "performer": "Oleksandr Dehtiar",
+        "album": "Dimension Of Sounds",
+        "composer": "Another Dimension Music",
+        "genre": "Psy-Trance",
+        "disctotal": "1",
+        "title": "Dimension Of Sounds",
+        "tracktotal": "01",
+        "tracknumber": "01",
+        "comment": "ADMSNGL005",
+        "bpm": "151",
+        "albumartist": "Ablepsy"
+      },
+      "mtime": 1776467618.8120725,
+      "size_bytes": 53677974
+    }
+  ],
+  "fingerprint": "c757e801307e17db267cdc1e8b223cc6e358378a",
+  "scanned_at": "2026-04-20T13:34:27.403766"
+}

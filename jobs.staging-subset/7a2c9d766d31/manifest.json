@@ -1,0 +1,40 @@
+{
+  "album_id": "7a2c9d766d31",
+  "root": "/home/pio/staging-subset/Ablepsy - Do You Believe In Ghosts! - Another Dimension Music - 2020",
+  "album_name": "Do You Believe In Ghosts!?",
+  "album_artist": "Ablepsy",
+  "tracks": [
+    {
+      "path": "/home/pio/staging-subset/Ablepsy - Do You Believe In Ghosts! - Another Dimension Music - 2020/01 - Do You Believe In Ghosts!_.flac",
+      "filename": "01 - Do You Believe In Ghosts!_.flac",
+      "ext": ".flac",
+      "track_number": 1,
+      "disc_number": 1,
+      "title": "Do You Believe In Ghosts!?",
+      "artist": "Ablepsy",
+      "album": "Do You Believe In Ghosts!?",
+      "album_artist": "Ablepsy",
+      "year": 2020,
+      "duration_s": 520.000022675737,
+      "raw_tags": {
+        "artist": "Ablepsy",
+        "discnumber": "1",
+        "date": "2020",
+        "album": "Do You Believe In Ghosts!?",
+        "composer": "Another Dimension Music",
+        "genre": "Psy-Trance",
+        "disctotal": "1",
+        "title": "Do You Believe In Ghosts!?",
+        "tracktotal": "01",
+        "tracknumber": "01",
+        "comment": "ADMSNGL004",
+        "bpm": "149",
+        "albumartist": "Ablepsy"
+      },
+      "mtime": 1776447094.3535583,
+      "size_bytes": 56194165
+    }
+  ],
+  "fingerprint": "c7bde9b827c3860a209cb90b3ca0dbf3e8beeafd",
+  "scanned_at": "2026-04-20T13:34:27.403775"
+}

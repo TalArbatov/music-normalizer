@@ -1,0 +1,40 @@
+{
+  "album_id": "b183b7479583",
+  "root": "/home/pio/staging-subset/A-Pyk - Rest In Space - Knobs And Keys Music - 2021",
+  "album_name": "Rest in Space",
+  "album_artist": "A-Pyk",
+  "tracks": [
+    {
+      "path": "/home/pio/staging-subset/A-Pyk - Rest In Space - Knobs And Keys Music - 2021/01. A-Pyk - Rest in Space.flac",
+      "filename": "01. A-Pyk - Rest in Space.flac",
+      "ext": ".flac",
+      "track_number": 1,
+      "disc_number": 1,
+      "title": "Rest in Space",
+      "artist": "A-Pyk",
+      "album": "Rest in Space",
+      "album_artist": "A-Pyk",
+      "year": 2020,
+      "duration_s": 438.0,
+      "raw_tags": {
+        "artist": "A-Pyk",
+        "discnumber": "1",
+        "date": "2020",
+        "album": "Rest in Space",
+        "composer": "Knobs And Keys Music",
+        "genre": "Psy-Trance",
+        "disctotal": "1",
+        "title": "Rest in Space",
+        "tracktotal": "1",
+        "tracknumber": "1",
+        "comment": "KKMS005",
+        "bpm": "159",
+        "albumartist": "A-Pyk"
+      },
+      "mtime": 1776467509.0900605,
+      "size_bytes": 44324018
+    }
+  ],
+  "fingerprint": "9935aa2a9b885d8edd6fd1cd1e99b3a887443343",
+  "scanned_at": "2026-04-20T13:34:27.403729"
+}

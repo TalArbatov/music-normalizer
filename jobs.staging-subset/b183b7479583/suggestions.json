@@ -1,0 +1,26 @@
+{
+  "album_id": "b183b7479583",
+  "classification": "clean",
+  "probe_score": 1.0,
+  "suggestions": [
+    {
+      "track_path": "/home/pio/staging-subset/A-Pyk - Rest In Space - Knobs And Keys Music - 2021/01. A-Pyk - Rest in Space.flac",
+      "current_title": "Rest in Space",
+      "current_artist": "A-Pyk",
+      "proposed_title": "Rest in Space",
+      "proposed_artist": "A-Pyk",
+      "action": "keep",
+      "issue_flags": [],
+      "original_issue_flags": [],
+      "remaining_issue_flags": [],
+      "confidence": 1.0,
+      "reason": "album probe clean; no change needed",
+      "source": "none",
+      "downgraded_from": null,
+      "validator_notes": []
+    }
+  ],
+  "classification_reason": "probe 1.00 ≥ clean_threshold 0.90 and no rule changes",
+  "used_llm": false,
+  "created_at": "2026-04-20T13:37:45.714807"
+}

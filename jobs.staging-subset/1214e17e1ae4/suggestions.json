@@ -1,0 +1,124 @@
+{
+  "album_id": "1214e17e1ae4",
+  "classification": "deterministic",
+  "probe_score": 0.6,
+  "suggestions": [
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk & Kryptone - 8 - Scrambled.wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Scrambled",
+      "proposed_artist": "Aardvarkk & Kryptone",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Scrambled'; derived artist from filename: 'Aardvarkk & Kryptone'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk - 3 - Dr Ledge.wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Dr Ledge",
+      "proposed_artist": "Aardvarkk",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Dr Ledge'; derived artist from filename: 'Aardvarkk'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk - 5 - Powderpuff (Aardvarkk remix).wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Powderpuff (Aardvarkk remix)",
+      "proposed_artist": "Aardvarkk",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Powderpuff (Aardvarkk remix)'; derived artist from filename: 'Aardvarkk'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk - 7 - Flabbergasted.wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Flabbergasted",
+      "proposed_artist": "Aardvarkk",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Flabbergasted'; derived artist from filename: 'Aardvarkk'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk - 9 - Bugpowder (Braingineers remix) (1).wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Bugpowder (Braingineers remix) (1)",
+      "proposed_artist": "Aardvarkk",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Bugpowder (Braingineers remix) (1)'; derived artist from filename: 'Aardvarkk'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/Aardvarkk - Heroic Dosas - Bom Shanka Music - 2024/Aardvarkk - 9 - Bugpowder (Braingineers remix).wav",
+      "current_title": null,
+      "current_artist": null,
+      "proposed_title": "Bugpowder (Braingineers remix)",
+      "proposed_artist": "Aardvarkk",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [
+        "artist_missing",
+        "unreadable_title"
+      ],
+      "remaining_issue_flags": [],
+      "confidence": 0.75,
+      "reason": "derived title from filename: 'Bugpowder (Braingineers remix)'; derived artist from filename: 'Aardvarkk'",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    }
+  ],
+  "classification_reason": "probe 0.60 ≥ deterministic_threshold 0.60; all candidates confident and no blocking remaining flags",
+  "used_llm": false,
+  "created_at": "2026-04-20T13:35:45.598571"
+}

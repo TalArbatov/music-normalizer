@@ -1,0 +1,40 @@
+{
+  "album_id": "18c7f2eb3cd4",
+  "root": "/home/pio/staging-subset/A-Pyk - Bounty Hound - Knobs And Keys Music - 2020",
+  "album_name": "Bounty Hound",
+  "album_artist": "A-Pyk",
+  "tracks": [
+    {
+      "path": "/home/pio/staging-subset/A-Pyk - Bounty Hound - Knobs And Keys Music - 2020/01 A-Pyk - Bounty Hound.flac",
+      "filename": "01 A-Pyk - Bounty Hound.flac",
+      "ext": ".flac",
+      "track_number": 1,
+      "disc_number": 1,
+      "title": "Bounty Hound",
+      "artist": "A-Pyk",
+      "album": "Bounty Hound",
+      "album_artist": "A-Pyk",
+      "year": 2020,
+      "duration_s": 551.0526303854875,
+      "raw_tags": {
+        "artist": "A-Pyk",
+        "discnumber": "1",
+        "date": "2020",
+        "album": "Bounty Hound",
+        "composer": "Knobs And Keys Music",
+        "genre": "Psy-Trance",
+        "disctotal": "1",
+        "title": "Bounty Hound",
+        "tracktotal": "1",
+        "tracknumber": "1",
+        "comment": "KKMS003",
+        "bpm": "151",
+        "albumartist": "A-Pyk"
+      },
+      "mtime": 1776446158.1805086,
+      "size_bytes": 58677951
+    }
+  ],
+  "fingerprint": "17f5c2a2db2f5ef8810be8c4be8ab43a798f5377",
+  "scanned_at": "2026-04-20T13:34:27.403720"
+}

@@ -1,0 +1,58 @@
+{
+  "album_id": "d90193e309c4",
+  "classification": "deterministic",
+  "probe_score": 1.0,
+  "suggestions": [
+    {
+      "track_path": "/home/pio/staging-subset/5Ø71 - Closed Freedom - Techlab.BP - 2021/5Ø71 - 'Closed Freedom' EP - 01 Scariest Trip Of Lockdown.flac",
+      "current_title": "Scariest Trip Of Lockdown",
+      "current_artist": "5Ø71",
+      "proposed_title": "Scariest Trip Of Lockdown",
+      "proposed_artist": "5ø71",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [],
+      "remaining_issue_flags": [],
+      "confidence": 0.9,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/5Ø71 - Closed Freedom - Techlab.BP - 2021/5Ø71 - 'Closed Freedom' EP - 02 Smashed Keyboard.flac",
+      "current_title": "Smashed Keyboard",
+      "current_artist": "5Ø71",
+      "proposed_title": "Smashed Keyboard",
+      "proposed_artist": "5ø71",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [],
+      "remaining_issue_flags": [],
+      "confidence": 0.9,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    },
+    {
+      "track_path": "/home/pio/staging-subset/5Ø71 - Closed Freedom - Techlab.BP - 2021/5Ø71 - 'Closed Freedom' EP - 03 Other Side Of The Coin.flac",
+      "current_title": "Other Side Of The Coin",
+      "current_artist": "5Ø71",
+      "proposed_title": "Other Side Of The Coin",
+      "proposed_artist": "5ø71",
+      "action": "propose_fix",
+      "issue_flags": [],
+      "original_issue_flags": [],
+      "remaining_issue_flags": [],
+      "confidence": 0.9,
+      "reason": "no changes proposed",
+      "source": "deterministic",
+      "downgraded_from": null,
+      "validator_notes": []
+    }
+  ],
+  "classification_reason": "probe 1.00 ≥ deterministic_threshold 0.60; all candidates confident and no blocking remaining flags",
+  "used_llm": false,
+  "created_at": "2026-04-20T13:38:30.114930"
+}

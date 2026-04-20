@@ -1,0 +1,110 @@
+{
+  "album_id": "8fc3d3737f72",
+  "root": "/home/pio/staging-subset/Abnorma - Drifter - Intermind Records - 2024",
+  "album_name": "Abnorma - Drifter (24 bit)",
+  "album_artist": "Abnorma",
+  "tracks": [
+    {
+      "path": "/home/pio/staging-subset/Abnorma - Drifter - Intermind Records - 2024/Abnorma - Abnorma - Drifter (24 bit) - 01 Sideways.flac",
+      "filename": "Abnorma - Abnorma - Drifter (24 bit) - 01 Sideways.flac",
+      "ext": ".flac",
+      "track_number": 1,
+      "disc_number": null,
+      "title": "Sideways",
+      "artist": "Abnorma",
+      "album": "Abnorma - Drifter (24 bit)",
+      "album_artist": "Abnorma",
+      "year": 2024,
+      "duration_s": 478.2857142857143,
+      "raw_tags": {
+        "artist": "Abnorma",
+        "date": "2024",
+        "album": "Abnorma - Drifter (24 bit)",
+        "title": "Sideways",
+        "tracknumber": "1",
+        "comment": "Visit https://intermindrecords.bandcamp.com",
+        "bpm": "93",
+        "albumartist": "Abnorma"
+      },
+      "mtime": 1776636361.811892,
+      "size_bytes": 94111808
+    },
+    {
+      "path": "/home/pio/staging-subset/Abnorma - Drifter - Intermind Records - 2024/Abnorma - Abnorma - Drifter (24 bit) - 02 Time Shift.flac",
+      "filename": "Abnorma - Abnorma - Drifter (24 bit) - 02 Time Shift.flac",
+      "ext": ".flac",
+      "track_number": 2,
+      "disc_number": null,
+      "title": "Time Shift",
+      "artist": "Abnorma",
+      "album": "Abnorma - Drifter (24 bit)",
+      "album_artist": "Abnorma",
+      "year": 2024,
+      "duration_s": 454.6478684807256,
+      "raw_tags": {
+        "artist": "Abnorma",
+        "date": "2024",
+        "album": "Abnorma - Drifter (24 bit)",
+        "title": "Time Shift",
+        "tracknumber": "2",
+        "comment": "Visit https://intermindrecords.bandcamp.com",
+        "bpm": "141",
+        "albumartist": "Abnorma"
+      },
+      "mtime": 1776636389.2198946,
+      "size_bytes": 91022082
+    },
+    {
+      "path": "/home/pio/staging-subset/Abnorma - Drifter - Intermind Records - 2024/Abnorma - Abnorma - Drifter (24 bit) - 03 Nebular.flac",
+      "filename": "Abnorma - Abnorma - Drifter (24 bit) - 03 Nebular.flac",
+      "ext": ".flac",
+      "track_number": 3,
+      "disc_number": null,
+      "title": "Nebular",
+      "artist": "Abnorma",
+      "album": "Abnorma - Drifter (24 bit)",
+      "album_artist": "Abnorma",
+      "year": 2024,
+      "duration_s": 485.91537414965984,
+      "raw_tags": {
+        "artist": "Abnorma",
+        "date": "2024",
+        "album": "Abnorma - Drifter (24 bit)",
+        "title": "Nebular",
+        "tracknumber": "3",
+        "comment": "Visit https://intermindrecords.bandcamp.com",
+        "bpm": "141",
+        "albumartist": "Abnorma"
+      },
+      "mtime": 1776636416.8598974,
+      "size_bytes": 100625725
+    },
+    {
+      "path": "/home/pio/staging-subset/Abnorma - Drifter - Intermind Records - 2024/Abnorma - Abnorma - Drifter (24 bit) - 04 Devil's Cat.flac",
+      "filename": "Abnorma - Abnorma - Drifter (24 bit) - 04 Devil's Cat.flac",
+      "ext": ".flac",
+      "track_number": 4,
+      "disc_number": null,
+      "title": "Devil's Cat",
+      "artist": "Abnorma",
+      "album": "Abnorma - Drifter (24 bit)",
+      "album_artist": "Abnorma",
+      "year": 2024,
+      "duration_s": 414.08451247165533,
+      "raw_tags": {
+        "artist": "Abnorma",
+        "date": "2024",
+        "album": "Abnorma - Drifter (24 bit)",
+        "title": "Devil's Cat",
+        "tracknumber": "4",
+        "comment": "Visit https://intermindrecords.bandcamp.com",
+        "bpm": "141",
+        "albumartist": "Abnorma"
+      },
+      "mtime": 1776636437.8958993,
+      "size_bytes": 84191380
+    }
+  ],
+  "fingerprint": "fffa6b6444f0a68d3ac0153f27d129ffec87a664",
+  "scanned_at": "2026-04-20T13:34:27.403788"
+}

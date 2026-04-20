@@ -1,0 +1,5 @@
+track_path,action,confidence,current_title,proposed_title,current_artist,proposed_artist,issue_flags,reason
+/home/pio/staging-subset/3G1K - Hive Mind - Samaa Records - 2019/3G1K - 1 - Machine Gunnels.mp3,propose_fix,0.90,Machine Gunnels,Machine Gunnels,3G1K,3g1k,,no changes proposed
+/home/pio/staging-subset/3G1K - Hive Mind - Samaa Records - 2019/3G1K - 2 - Hive Mind.mp3,propose_fix,0.90,Hive Mind,Hive Mind,3G1K,3g1k,,no changes proposed
+/home/pio/staging-subset/3G1K - Hive Mind - Samaa Records - 2019/3G1K - 3 - Time Dilation.mp3,propose_fix,0.90,Time Dilation,Time Dilation,3G1K,3g1k,,no changes proposed
+/home/pio/staging-subset/3G1K - Hive Mind - Samaa Records - 2019/3G1K - 4 - Needs More Gamma Rays.mp3,propose_fix,0.90,Needs More Gamma Rays,Needs More Gamma Rays,3G1K,3g1k,,no changes proposed
