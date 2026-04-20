@@ -28,8 +28,8 @@ class CacheConfig(BaseModel):
 
 class OllamaConfig(BaseModel):
     base_url: str = "http://localhost:11434"
-    model: str = "llama3.1:8b-instruct"
-    request_timeout_s: int = 120
+    model: str = "qwen3:4b-instruct-2507-q4_K_M"
+    request_timeout_s: int = 300
     temperature: float = 0.1
     max_tracks_per_call: int = 40
 

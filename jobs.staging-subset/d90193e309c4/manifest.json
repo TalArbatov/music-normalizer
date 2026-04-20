@@ -17,14 +17,14 @@
       "year": 2021,
       "duration_s": 403.4782766439909,
       "raw_tags": {
-        "artist": "5Ø71",
-        "date": "2021",
-        "album": "'Closed Freedom' EP",
-        "title": "Scariest Trip Of Lockdown",
+        "albumartist": "5Ø71",
         "tracknumber": "1",
+        "date": "2021",
         "comment": "Visit https://techlabbp.bandcamp.com",
         "bpm": "149",
-        "albumartist": "5Ø71"
+        "album": "'Closed Freedom' EP",
+        "artist": "5Ø71",
+        "title": "Scariest Trip Of Lockdown"
       },
       "mtime": 1776467465.2920556,
       "size_bytes": 79398102
@@ -42,14 +42,14 @@
       "year": 2021,
       "duration_s": 366.9565306122449,
       "raw_tags": {
-        "artist": "5Ø71",
-        "date": "2021",
-        "album": "'Closed Freedom' EP",
-        "title": "Smashed Keyboard",
+        "albumartist": "5Ø71",
         "tracknumber": "2",
+        "date": "2021",
         "comment": "Visit https://techlabbp.bandcamp.com",
         "bpm": "151",
-        "albumartist": "5Ø71"
+        "album": "'Closed Freedom' EP",
+        "artist": "5Ø71",
+        "title": "Smashed Keyboard"
       },
       "mtime": 1776467479.259057,
       "size_bytes": 73584720
@@ -67,19 +67,19 @@
       "year": 2021,
       "duration_s": 347.8260997732426,
       "raw_tags": {
-        "artist": "5Ø71",
-        "date": "2021",
-        "album": "'Closed Freedom' EP",
-        "title": "Other Side Of The Coin",
+        "albumartist": "5Ø71",
         "tracknumber": "3",
+        "date": "2021",
         "comment": "Visit https://techlabbp.bandcamp.com",
         "bpm": "101",
-        "albumartist": "5Ø71"
+        "album": "'Closed Freedom' EP",
+        "artist": "5Ø71",
+        "title": "Other Side Of The Coin"
       },
       "mtime": 1776467449.775054,
       "size_bytes": 71378886
     }
   ],
   "fingerprint": "83bafeb523ac58005b5dbfdbae50d830760199ce",
-  "scanned_at": "2026-04-20T13:34:27.403701"
+  "scanned_at": "2026-04-20T16:26:57.717527"
 }

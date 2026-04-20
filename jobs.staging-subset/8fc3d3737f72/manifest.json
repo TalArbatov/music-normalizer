@@ -17,14 +17,14 @@
       "year": 2024,
       "duration_s": 478.2857142857143,
       "raw_tags": {
-        "artist": "Abnorma",
-        "date": "2024",
-        "album": "Abnorma - Drifter (24 bit)",
-        "title": "Sideways",
+        "albumartist": "Abnorma",
         "tracknumber": "1",
+        "date": "2024",
         "comment": "Visit https://intermindrecords.bandcamp.com",
         "bpm": "93",
-        "albumartist": "Abnorma"
+        "album": "Abnorma - Drifter (24 bit)",
+        "artist": "Abnorma",
+        "title": "Sideways"
       },
       "mtime": 1776636361.811892,
       "size_bytes": 94111808
@@ -42,14 +42,14 @@
       "year": 2024,
       "duration_s": 454.6478684807256,
       "raw_tags": {
-        "artist": "Abnorma",
-        "date": "2024",
-        "album": "Abnorma - Drifter (24 bit)",
-        "title": "Time Shift",
+        "albumartist": "Abnorma",
         "tracknumber": "2",
+        "date": "2024",
         "comment": "Visit https://intermindrecords.bandcamp.com",
         "bpm": "141",
-        "albumartist": "Abnorma"
+        "album": "Abnorma - Drifter (24 bit)",
+        "artist": "Abnorma",
+        "title": "Time Shift"
       },
       "mtime": 1776636389.2198946,
       "size_bytes": 91022082
@@ -67,14 +67,14 @@
       "year": 2024,
       "duration_s": 485.91537414965984,
       "raw_tags": {
-        "artist": "Abnorma",
-        "date": "2024",
-        "album": "Abnorma - Drifter (24 bit)",
-        "title": "Nebular",
+        "albumartist": "Abnorma",
         "tracknumber": "3",
+        "date": "2024",
         "comment": "Visit https://intermindrecords.bandcamp.com",
         "bpm": "141",
-        "albumartist": "Abnorma"
+        "album": "Abnorma - Drifter (24 bit)",
+        "artist": "Abnorma",
+        "title": "Nebular"
       },
       "mtime": 1776636416.8598974,
       "size_bytes": 100625725
@@ -92,19 +92,19 @@
       "year": 2024,
       "duration_s": 414.08451247165533,
       "raw_tags": {
-        "artist": "Abnorma",
-        "date": "2024",
-        "album": "Abnorma - Drifter (24 bit)",
-        "title": "Devil's Cat",
+        "albumartist": "Abnorma",
         "tracknumber": "4",
+        "date": "2024",
         "comment": "Visit https://intermindrecords.bandcamp.com",
         "bpm": "141",
-        "albumartist": "Abnorma"
+        "album": "Abnorma - Drifter (24 bit)",
+        "artist": "Abnorma",
+        "title": "Devil's Cat"
       },
       "mtime": 1776636437.8958993,
       "size_bytes": 84191380
     }
   ],
   "fingerprint": "fffa6b6444f0a68d3ac0153f27d129ffec87a664",
-  "scanned_at": "2026-04-20T13:34:27.403788"
+  "scanned_at": "2026-04-20T16:26:57.717601"
 }

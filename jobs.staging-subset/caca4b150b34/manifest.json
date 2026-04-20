@@ -17,14 +17,14 @@
       "year": 2024,
       "duration_s": 502.588253968254,
       "raw_tags": {
-        "artist": "01010010",
-        "date": "2024",
-        "album": "始まり(EP)",
-        "title": "i (170BPM)",
+        "albumartist": "01010010",
         "tracknumber": "1",
+        "date": "2024",
         "comment": "Visit https://tripurayantrarecs.bandcamp.com",
         "bpm": "113",
-        "albumartist": "01010010"
+        "album": "始まり(EP)",
+        "artist": "01010010",
+        "title": "i (170BPM)"
       },
       "mtime": 1776636142.2078705,
       "size_bytes": 102291289
@@ -42,14 +42,14 @@
       "year": 2024,
       "duration_s": 530.5263265306122,
       "raw_tags": {
-        "artist": "01010010",
-        "date": "2024",
-        "album": "始まり(EP)",
-        "title": "iii (190BPM)",
+        "albumartist": "01010010",
         "tracknumber": "2",
+        "date": "2024",
         "comment": "Visit https://tripurayantrarecs.bandcamp.com",
         "bpm": "126",
-        "albumartist": "01010010"
+        "album": "始まり(EP)",
+        "artist": "01010010",
+        "title": "iii (190BPM)"
       },
       "mtime": 1776636165.9438727,
       "size_bytes": 108759889
@@ -67,19 +67,19 @@
       "year": 2024,
       "duration_s": 427.2,
       "raw_tags": {
-        "artist": "01010010",
-        "date": "2024",
-        "album": "始まり(EP)",
-        "title": "iiiii (200BPM)",
+        "albumartist": "01010010",
         "tracknumber": "3",
+        "date": "2024",
         "comment": "Visit https://tripurayantrarecs.bandcamp.com",
         "bpm": "133",
-        "albumartist": "01010010"
+        "album": "始まり(EP)",
+        "artist": "01010010",
+        "title": "iiiii (200BPM)"
       },
       "mtime": 1776636184.2718747,
       "size_bytes": 79647186
     }
   ],
   "fingerprint": "67cd6485e97f245d34cff92765712634d808ef63",
-  "scanned_at": "2026-04-20T13:34:27.403613"
+  "scanned_at": "2026-04-20T16:26:57.717449"
 }

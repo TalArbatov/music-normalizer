@@ -9,6 +9,7 @@ classify, and only call the LLM when the classifier says we must.
 
 from __future__ import annotations
 
+import time
 from pathlib import Path
 from typing import Any
 
@@ -71,7 +72,15 @@ def suggest_for_album(
                 suggestions = _ask_llm(manifest, ollama, candidates, config)
                 used_llm = True
             except OllamaError as e:
-                log.error("Ollama call failed for album %s: %s", manifest.album_id, e)
+                log.exception(
+                    "ollama call failed album=%s model=%s: %s",
+                    manifest.album_id, ollama.config.model, e,
+                )
+                print(
+                    f"{manifest.album_id} llm-failed model={ollama.config.model} "
+                    f"error={type(e).__name__}: {e}",
+                    flush=True,
+                )
                 suggestions = _from_candidates(manifest.tracks, candidates)
 
     validated = validate_suggestions(suggestions, config)
@@ -169,10 +178,36 @@ def _ask_llm(
     tracks = manifest.tracks
     merged: dict[str, Suggestion] = {}
 
+    print(
+        f"{manifest.album_id} llm-start model={ollama.config.model} "
+        f"tracks={len(tracks)} timeout={ollama.config.request_timeout_s}",
+        flush=True,
+    )
+    album_t0 = time.monotonic()
+
     for i in range(0, len(tracks), chunk_size):
         chunk = tracks[i : i + chunk_size]
         user = build_user_message(manifest, tracks=chunk)
-        raw = ollama.chat_json(SYSTEM_PROMPT, user)
+        log.info(
+            "ollama call album=%s model=%s tracks=%d prompt_chars=%d timeout=%ds chunk=%d-%d",
+            manifest.album_id, ollama.config.model, len(chunk), len(user),
+            ollama.config.request_timeout_s, i, i + len(chunk),
+        )
+        chunk_t0 = time.monotonic()
+        try:
+            raw = ollama.chat_json(SYSTEM_PROMPT, user)
+        except OllamaError:
+            elapsed_ms = int((time.monotonic() - chunk_t0) * 1000)
+            log.info(
+                "ollama call failure album=%s elapsed_ms=%d chunk=%d-%d",
+                manifest.album_id, elapsed_ms, i, i + len(chunk),
+            )
+            raise
+        elapsed_ms = int((time.monotonic() - chunk_t0) * 1000)
+        log.info(
+            "ollama call success album=%s elapsed_ms=%d chunk=%d-%d",
+            manifest.album_id, elapsed_ms, i, i + len(chunk),
+        )
         ok, reason = validate_response(raw)
         if not ok:
             log.error(
@@ -208,6 +243,12 @@ def _ask_llm(
             reason="LLM response missing this track; used deterministic fallback",
             source=SuggestionSource.DETERMINISTIC,
         ))
+    album_elapsed_ms = int((time.monotonic() - album_t0) * 1000)
+    print(
+        f"{manifest.album_id} llm-done model={ollama.config.model} "
+        f"tracks={len(tracks)} elapsed_ms={album_elapsed_ms}",
+        flush=True,
+    )
     return out
 
 

@@ -17,15 +17,15 @@
       "year": 2021,
       "duration_s": 558.5207256235827,
       "raw_tags": {
-        "date": "2021",
-        "artist": "A-Pyk",
         "comment": "Visit https://knobsandkeys.bandcamp.com",
-        "title": "A-Pyk - Assymetric Smile"
+        "artist": "A-Pyk",
+        "title": "A-Pyk - Assymetric Smile",
+        "date": "2021"
       },
       "mtime": 1776467500.8810596,
       "size_bytes": 114984923
     }
   ],
   "fingerprint": "ccdb724a210f2dc81a375b6f55cb2737c3142be1",
-  "scanned_at": "2026-04-20T13:34:27.403711"
+  "scanned_at": "2026-04-20T16:26:57.717536"
 }

@@ -17,25 +17,25 @@
       "year": 2021,
       "duration_s": 429.47369614512473,
       "raw_tags": {
-        "artist": "Ablepsy",
-        "discnumber": "1",
-        "date": "2021",
-        "performer": "Oleksandr Dehtiar",
-        "album": "Dimension Of Sounds",
         "composer": "Another Dimension Music",
-        "genre": "Psy-Trance",
-        "disctotal": "1",
-        "title": "Dimension Of Sounds",
         "tracktotal": "01",
+        "discnumber": "1",
+        "albumartist": "Ablepsy",
         "tracknumber": "01",
+        "performer": "Oleksandr Dehtiar",
+        "disctotal": "1",
+        "date": "2021",
+        "genre": "Psy-Trance",
         "comment": "ADMSNGL005",
         "bpm": "151",
-        "albumartist": "Ablepsy"
+        "album": "Dimension Of Sounds",
+        "artist": "Ablepsy",
+        "title": "Dimension Of Sounds"
       },
       "mtime": 1776467618.8120725,
       "size_bytes": 53677974
     }
   ],
   "fingerprint": "c757e801307e17db267cdc1e8b223cc6e358378a",
-  "scanned_at": "2026-04-20T13:34:27.403766"
+  "scanned_at": "2026-04-20T16:26:57.717584"
 }

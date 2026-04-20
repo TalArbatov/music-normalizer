@@ -17,24 +17,24 @@
       "year": 2020,
       "duration_s": 438.0,
       "raw_tags": {
-        "artist": "A-Pyk",
-        "discnumber": "1",
-        "date": "2020",
-        "album": "Rest in Space",
         "composer": "Knobs And Keys Music",
-        "genre": "Psy-Trance",
-        "disctotal": "1",
-        "title": "Rest in Space",
         "tracktotal": "1",
+        "discnumber": "1",
+        "albumartist": "A-Pyk",
         "tracknumber": "1",
+        "disctotal": "1",
+        "date": "2020",
+        "genre": "Psy-Trance",
         "comment": "KKMS005",
         "bpm": "159",
-        "albumartist": "A-Pyk"
+        "album": "Rest in Space",
+        "artist": "A-Pyk",
+        "title": "Rest in Space"
       },
       "mtime": 1776467509.0900605,
       "size_bytes": 44324018
     }
   ],
   "fingerprint": "9935aa2a9b885d8edd6fd1cd1e99b3a887443343",
-  "scanned_at": "2026-04-20T13:34:27.403729"
+  "scanned_at": "2026-04-20T16:26:57.717553"
 }

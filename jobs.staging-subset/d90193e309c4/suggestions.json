@@ -54,5 +54,5 @@
   ],
   "classification_reason": "probe 1.00 ≥ deterministic_threshold 0.60; all candidates confident and no blocking remaining flags",
   "used_llm": false,
-  "created_at": "2026-04-20T13:38:30.114930"
+  "created_at": "2026-04-20T16:30:03.152796"
 }

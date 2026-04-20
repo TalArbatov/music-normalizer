@@ -73,9 +73,9 @@ cache:
 # Ollama configuration.
 ollama:
   base_url: "http://localhost:11434"
-  model: "llama3.1:8b-instruct"
+  model: "qwen3:4b-instruct-2507-q4_K_M"
   # Hard timeout per request in seconds.
-  request_timeout_s: 120
+  request_timeout_s: 300
   # Temperature: keep low for deterministic structured output.
   temperature: 0.1
   # How many tracks to send in one album-level batch before splitting.

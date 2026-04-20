@@ -17,24 +17,24 @@
       "year": 2020,
       "duration_s": 551.0526303854875,
       "raw_tags": {
-        "artist": "A-Pyk",
-        "discnumber": "1",
-        "date": "2020",
-        "album": "Bounty Hound",
         "composer": "Knobs And Keys Music",
-        "genre": "Psy-Trance",
-        "disctotal": "1",
-        "title": "Bounty Hound",
         "tracktotal": "1",
+        "discnumber": "1",
+        "albumartist": "A-Pyk",
         "tracknumber": "1",
+        "disctotal": "1",
+        "date": "2020",
+        "genre": "Psy-Trance",
         "comment": "KKMS003",
         "bpm": "151",
-        "albumartist": "A-Pyk"
+        "album": "Bounty Hound",
+        "artist": "A-Pyk",
+        "title": "Bounty Hound"
       },
       "mtime": 1776446158.1805086,
       "size_bytes": 58677951
     }
   ],
   "fingerprint": "17f5c2a2db2f5ef8810be8c4be8ab43a798f5377",
-  "scanned_at": "2026-04-20T13:34:27.403720"
+  "scanned_at": "2026-04-20T16:26:57.717544"
 }

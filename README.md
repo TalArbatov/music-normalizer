@@ -50,7 +50,7 @@ pip install -e ".[dev]"
 Optional: install and start [Ollama](https://ollama.com/) for the LLM path.
 
 ```bash
-ollama pull llama3.1:8b-instruct
+ollama pull qwen3:4b-instruct-2507-q4_K_M
 ollama serve   # usually auto-starts
 ```
 

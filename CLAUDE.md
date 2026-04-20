@@ -35,7 +35,7 @@ music-normalizer review-all
 music-normalizer apply-all [--no-dry-run]
 ```
 
-The `suggest` command requires Ollama running locally for the LLM path (`ollama pull llama3.1:8b-instruct && ollama serve`). If Ollama is unreachable the pipeline logs a warning and degrades to deterministic-only — tests do not require it.
+The `suggest` command requires Ollama running locally for the LLM path (`ollama pull qwen3:4b-instruct-2507-q4_K_M && ollama serve`). If Ollama is unreachable the pipeline logs a warning and degrades to deterministic-only — tests do not require it.
 
 `config.yaml` is loaded from the current working directory by default. `config.example.yaml` is the template.
 
