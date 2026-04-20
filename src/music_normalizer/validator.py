@@ -16,7 +16,7 @@ from __future__ import annotations
 import re
 
 from .config import Config
-from .issues import GENERIC_TITLE_RE, is_unreadable
+from .issues import GENERIC_TITLE_RE, is_symbolic_title, is_unreadable
 from .models import IssueFlag, Suggestion, SuggestionSource, TrackAction
 
 
@@ -27,6 +27,23 @@ def validate_suggestions(suggestions: list[Suggestion], config: Config) -> list[
 def validate(s: Suggestion, config: Config) -> Suggestion:
     notes: list[str] = list(s.validator_notes)
     out = s.model_copy(deep=True)
+
+    # 0a. LLM mutating a short symbolic title (``i``, ``iii``, ``iiiii`` …) is
+    # destructive — every character is meaningful. Revert to the current title
+    # so the rest of validation sees no title change. Artist edits, if any,
+    # still apply.
+    if (
+        out.source == SuggestionSource.LLM
+        and out.proposed_title is not None
+        and is_symbolic_title(out.current_title)
+        and (out.proposed_title or "").strip() != (out.current_title or "").strip()
+    ):
+        notes.append(
+            f"validator: rejected LLM edit of symbolic title "
+            f"{out.current_title!r} -> {out.proposed_title!r}"
+        )
+        out.proposed_title = out.current_title
+        out.confidence = min(out.confidence, 0.3)
 
     # 0. No effective change? Short-circuit to KEEP before applying any of the
     # heuristics below — otherwise a very short current title like "a" would hit

@@ -13,7 +13,7 @@ import re
 from pathlib import Path
 
 from .config import Config
-from .issues import GENERIC_TITLE_RE, detect_issues
+from .issues import GENERIC_TITLE_RE, detect_issues, is_symbolic_title
 from .models import DeterministicCandidate, IssueFlag, TrackInfo
 
 # Words that should stay lowercase in title case unless first/last.
@@ -51,6 +51,15 @@ _FILENAME_NUM_ARTIST_TITLE_RE = re.compile(
 )
 _FILENAME_NUM_TITLE_RE = re.compile(r"^\d{1,3}\s+-\s+(?P<title>.+)$")
 _FILENAME_ARTIST_TITLE_RE = re.compile(r"^(?P<artist>.+?)\s+-\s+(?P<title>.+)$")
+
+# "10. Artist - Title", "3. Artist - Title", ". Artist - Title", "01) Artist - Title".
+# The leading (optional) number plus required punctuation (`.`, `-`, `_`, `)`, `]`)
+# is a strong structural anchor: the rest of the stem can be read as
+# ``Artist - Title`` without album-level corroboration. Covers WAV->FLAC rips
+# where the tag block is nearly empty but the filename carries the full name.
+_FILENAME_NUM_PUNCT_ARTIST_TITLE_RE = re.compile(
+    r"^\s*(?:\d{1,3})?\s*[.\-_)\]]+\s*(?P<artist>.+?)\s+-\s+(?P<title>.+)$"
+)
 
 # BPM/tempo junk at the end of a title. Three cases, applied in order:
 # 1. Bracketed numeric segment — `(160)`, `[160]`, `(160bpm)`, `[190-220]`,
@@ -93,7 +102,11 @@ def parse_filename_fallback(
     if not stem:
         return None
 
-    for pat in (_FILENAME_ARTIST_NUM_TITLE_RE, _FILENAME_NUM_ARTIST_TITLE_RE):
+    for pat in (
+        _FILENAME_ARTIST_NUM_TITLE_RE,
+        _FILENAME_NUM_ARTIST_TITLE_RE,
+        _FILENAME_NUM_PUNCT_ARTIST_TITLE_RE,
+    ):
         m = pat.match(stem)
         if m:
             artist = m.group("artist").strip()
@@ -246,7 +259,7 @@ def normalize_track(
     artist = _collapse_whitespace(artist)
 
     title = _smart_title_case(title) if _needs_case_fix(title) else title
-    artist = _smart_title_case(artist) if _needs_case_fix(artist) else artist
+    artist = _smart_title_case(artist) if _artist_needs_case_fix(artist) else artist
 
     # Nothing worth proposing?
     proposed_title = title if title and title != original_title else None
@@ -437,10 +450,31 @@ def _collapse_whitespace(s: str) -> str:
 def _needs_case_fix(s: str) -> bool:
     if not s or not any(c.isalpha() for c in s):
         return False
+    if is_symbolic_title(s):
+        return False
     if s == s.lower():
         return True
     # All-caps strings longer than a handful of chars are almost always wrong.
     if s == s.upper() and len(s) > 3 and any(c.isalpha() for c in s):
+        return True
+    return False
+
+
+def _artist_needs_case_fix(s: str) -> bool:
+    """Artist casing policy is stricter than title casing.
+
+    Artist names are routinely stylized — ``2LAVE RAC3``, ``PILL MURRAY``,
+    ``Psy-VitaMinD``, ``deadmau5`` — and blindly title-casing them is worse
+    than leaving them alone. Only fix plain all-lowercase alpha text. Any
+    digit, any uppercase letter, or any already-mixed casing means we keep
+    the original verbatim.
+    """
+    if not s or not any(c.isalpha() for c in s):
+        return False
+    if any(c.isdigit() for c in s):
+        return False
+    stripped = s.strip()
+    if stripped == stripped.lower() and stripped != stripped.upper():
         return True
     return False
 
@@ -622,6 +656,26 @@ def album_supports_artist_split(tracks: list[TrackInfo], config: Config) -> bool
     return supporting >= 2
 
 
+def album_supports_filename_recovery(tracks: list[TrackInfo]) -> bool:
+    """At least 2 tracks have filenames with strong, unambiguous structure.
+
+    "Strong" means a pattern that :func:`parse_filename_fallback` decodes
+    without relying on album-level corroboration — a three-part form or a
+    leading number/punct + ``Artist - Title``. When two or more siblings show
+    this, the album as a whole is recoverable from filenames, so we can also
+    trust the bare two-part form on tracks whose filenames are weaker. This is
+    the signal that flips WAV->FLAC rips (tags nearly empty, filenames rich)
+    out of the BROKEN -> LLM path and back into deterministic handling.
+    """
+    supporting = 0
+    for t in tracks:
+        if parse_filename_fallback(t.filename, allow_two_part_split=False) is not None:
+            supporting += 1
+            if supporting >= 2:
+                return True
+    return False
+
+
 def propose_for_album(
     tracks: list[TrackInfo], config: Config
 ) -> dict[Path, DeterministicCandidate]:
@@ -629,7 +683,9 @@ def propose_for_album(
 
     Two album-level decisions are made once up front so every track sees a
     consistent answer:
-    - ``allow_split``: is ``Artist - Title`` corroborated on enough tracks?
+    - ``allow_split``: is ``Artist - Title`` corroborated on enough tracks —
+      either via tags (:func:`album_supports_artist_split`) or via strongly
+      structured filenames (:func:`album_supports_filename_recovery`)?
     - ``album_prefix``: what junk prefix recurs on most tracks and should be
       stripped album-wide?
 
@@ -637,7 +693,10 @@ def propose_for_album(
     one, so the per-track artist-prefix strip can still catch cases where one
     outlier track is missing its tag.
     """
-    allow_split = album_supports_artist_split(tracks, config)
+    allow_split = (
+        album_supports_artist_split(tracks, config)
+        or album_supports_filename_recovery(tracks)
+    )
 
     # Use titles that have had leading track numbers stripped so a numeric
     # prefix doesn't fool the common-prefix detector.

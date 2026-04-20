@@ -34,6 +34,31 @@ _BPM_RE = re.compile(r"[\s\-\(\[]+\d{2,3}\s*bpm\b", re.IGNORECASE)
 _MULTI_DASH_RE = re.compile(r"\s-\s.*\s-\s")
 
 
+def is_symbolic_title(s: str | None) -> bool:
+    """Short symbolic tokens we must never rewrite or "correct".
+
+    Covers single-letter, repeated-letter (``i``, ``ii``, ``iiiii``) and
+    roman-numeral-style (``iv``, ``viii``) titles. These look destructible to a
+    case-fixer or an LLM but every character is meaningful — turning ``iiiii``
+    into ``iiii`` or ``i`` into ``I`` is a destructive edit, not a cleanup.
+    """
+    if s is None:
+        return False
+    t = s.strip()
+    if not t or len(t) > 6:
+        return False
+    if not t.isalpha():
+        return False
+    low = t.lower()
+    # Repeated-letter form: e.g. "i", "ii", "aaa".
+    if len(set(low)) == 1:
+        return True
+    # Roman-numeral-only letters: i, v, x.
+    if set(low) <= {"i", "v", "x"}:
+        return True
+    return False
+
+
 def detect_issues(title: str | None, artist: str | None, config: Config) -> list[IssueFlag]:
     """Return the full set of flags raised against a (title, artist) pair."""
     flags: list[IssueFlag] = []
@@ -129,6 +154,8 @@ def _is_bad_capitalization(s: str) -> bool:
     """Pure lowercase or pure uppercase strings that contain letters."""
     if not any(ch.isalpha() for ch in s):
         return False
+    if is_symbolic_title(s):
+        return False
     stripped = s.strip()
     if stripped == stripped.lower() and stripped != stripped.upper():
         return True
@@ -139,6 +166,8 @@ def _is_bad_capitalization(s: str) -> bool:
 
 def is_unreadable(s: str) -> bool:
     """Heuristic: mostly non-letters or very short → unreadable."""
+    if is_symbolic_title(s):
+        return False
     stripped = s.strip()
     if len(stripped) < 2:
         return True
